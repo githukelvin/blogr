@@ -1,10 +1,11 @@
 <template>
-  <div></div>
+ <HeaderComp/>
 </template>
 
-<script>
-// @ is an alias to /src
+<script setup>
+import HeaderComp from '@/components/HeaderComp.vue'
 
-export default {
-}
 </script>
+
+<style lang="scss" scoped>
+</style>
