@@ -84,14 +84,7 @@
   }
 
   .btns {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-    width: fit-content;
-    margin-inline:auto;
     font-family: "Ubold";
-    font-size: 1rem;
-
     a {
       color: nc.$text;
       padding: 0.8em 1.5em;

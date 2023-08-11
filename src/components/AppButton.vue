@@ -1,5 +1,5 @@
 <template>
-  <a class="btn" :href="link">{{text}}</a>
+  <a class="btn"  :href="link">{{text}}</a>
 </template>
 
 <script setup>

@@ -31,7 +31,7 @@
       <h1>A modern publishing platform</h1>
       <p>Grow your audience and build your online brand</p>
       <div class="btns">
-        <AppButton link="#" text="Start for Free" />
+        <AppButton id="hey" link="#" text="Start for Free" />
         <a href="#">Learn More</a>
       </div>
     </div>
@@ -58,7 +58,22 @@ import AppButton from './AppButton.vue'
   }
   p {
     font-size: 1.2rem;
-    padding: 1.5em 0;
+    padding: .8em 0;
+    word-spacing: 2px;
+  }
+  .btns{
+    margin-top: 2em;
+    gap: 1em;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin-inline:auto;
+    font-size: 1rem;
+
+    #hey{
+      padding: .85em;
+      margin-right: 0;
+    }
   }
 }
 </style>
