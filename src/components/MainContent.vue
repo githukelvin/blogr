@@ -27,7 +27,7 @@
 </template>
 
 <script setup>
-import AppPara from "./AppPara.vue";
+import AppPara from './AppPara.vue'
 </script>
 
 <style lang="scss" scoped>
