@@ -1,3 +1,5 @@
+@use "./colors" as c;
+
 *{
     margin: 0;
     padding: 0;
@@ -6,11 +8,17 @@
     text-decoration: none;
     box-sizing: border-box;
     font-size: 1rem;
-    color-scheme: light dark;
 
+}
+body,html{
+    background:c.$bgbody ;
 }
 .container{
     width:min(100%,1440px);
     margin-inline:auto;
     
+}
+.content{
+     width:min(100%, 1100px);
+     margin-inline:auto;
 }

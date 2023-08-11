@@ -1,0 +1,47 @@
+@use "../partials/colors" as nc;
+.navBar {}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4.5em;
+
+    nav {
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 1.5em;
+            li {
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    color: nc.$text;
+                    font-family: 'Osemibold';
+                    text-transform: capitalize;
+                    gap: 0.5em;
+                    font-size: 1.1rem;
+                    div{
+                        $size:.7em;
+                        width: $size;
+                        height: $size;
+                        background-image: url("../images/icon-arrow-light.svg");
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                    }
+                    &:hover {
+                        border-bottom: 1px solid nc.$text;
+                        div{
+                            background-image: url("../images/icon-arrow-dark.svg");
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.right {}

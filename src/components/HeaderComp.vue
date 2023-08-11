@@ -1,22 +1,29 @@
 <template>
- <header>
-   <div class="container"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt id beatae doloremque soluta ipsam quasi accusantium doloribus error eveniet eum. Sed corrupti consequuntur vitae, consequatur excepturi placeat modi porro sint!</p></div>
- </header>
+<header>
+  <div class="container ">
+  <div class="content navBar">
+    <div class="left">
+      <a href="/"><img src="/images/logo.svg" alt=""></a>
+      <nav>
+        <ul>
+          <li><a href="/product">product<div></div></a></li>
+          <li><a href="/company">company<div></div></a></li>
+          <li><a href="/connect">connect<div></div></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="right btns">
+
+    </div>
+  </div>
+</div>
+</header>
 </template>
 
-<script>
-export default {
-  name: 'HeaderComp',
-  data () {
-    return {
+<script setup>
 
-    }
-  },
-  methods: {
-
-  }
-}
 </script>
 
 <style lang="scss" scoped>
+
 </style>
