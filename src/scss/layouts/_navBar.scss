@@ -1,47 +1,106 @@
 @use "../partials/colors" as nc;
-.navBar {}
-
-.left {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 4.5em;
-
-    nav {
-
-        ul {
-            display: flex;
-            flex-direction: row;
-            gap: 1.5em;
-            li {
-                a {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    color: nc.$text;
-                    font-family: 'Osemibold';
-                    text-transform: capitalize;
-                    gap: 0.5em;
-                    font-size: 1.1rem;
-                    div{
-                        $size:.7em;
-                        width: $size;
-                        height: $size;
-                        background-image: url("../images/icon-arrow-light.svg");
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                    }
-                    &:hover {
-                        border-bottom: 1px solid nc.$text;
-                        div{
-                            background-image: url("../images/icon-arrow-dark.svg");
-                        }
-                    }
-                }
-            }
-        }
-    }
+.navBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3.8em;
 }
 
-.right {}
+.left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4em;
+
+  nav {
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 2em;
+      li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5em;
+
+        a {
+          color: nc.$text;
+          font-family: "Osemibold";
+          text-transform: capitalize;
+          font-size: 1rem;
+          padding-top: 0.5em;
+        }
+        div {
+          $size: 0.7em;
+          width: $size;
+          height: $size;
+          background-image: url("../images/icon-arrow-light.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+
+        &:hover {
+          a {
+            border-bottom: 1px solid nc.$text;
+            transition: border-bottom 300ms ease;
+          }
+          div {
+            transform: rotate(180deg);
+            transition: transform 250ms ease;
+          }
+        }
+      }
+    }
+  }
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2em;
+
+  a {
+    text-transform: capitalize;
+    font-family: "Ubold";
+    color: nc.$text;
+    font-size: 1rem;
+  }
+  .btn {
+    color: nc.$CTAtext;
+  }
+}
+
+.middleContent {
+  h1 {
+    font-family: "Osemibold";
+  }
+
+  p {
+    font-family: "Olight";
+    color: nc.$text;
+  }
+
+  .btns {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    width: fit-content;
+    margin-inline:auto;
+    font-family: "Ubold";
+    font-size: 1rem;
+
+    a {
+      color: nc.$text;
+      padding: 0.8em 1.5em;
+      border-radius: 2em;
+      border: 2px solid nc.$text;
+    }
+
+    .btn {
+      color: nc.$CTAtext;
+    }
+  }
+}
