@@ -1,7 +1,7 @@
 <template>
-  <main class="content">
+  <main class="container">
     <h2>Designed for the future</h2>
-    <section class="sect1">
+    <section class="sect1 topcontent">
       <div class="info">
         <div class="info__left">
           <AppPara
@@ -33,7 +33,7 @@ import AppPara from './AppPara.vue'
 main {
   h2 {
     text-align: center;
-    padding-top: 4em ;
+    padding: 4em 0 2.9em;
   }
 }
 .sect1{
