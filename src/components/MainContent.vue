@@ -19,7 +19,6 @@
           />
         </div>
         <div class="info__right">
-          <img src="/images/illustration-editor-desktop.svg" alt="" />
         </div>
       </div>
     </section>
@@ -34,7 +33,17 @@ import AppPara from './AppPara.vue'
 main {
   h2 {
     text-align: center;
-    padding: 4em 0 2.9em;
+    padding-top: 4em ;
+  }
+}
+.sect1{
+  .info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &__left{
+    }
+    &__right{
+    }
   }
 }
 </style>
