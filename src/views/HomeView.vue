@@ -1,6 +1,6 @@
 <template>
- <HeaderComp/>
- <MainContent/>
+   <HeaderComp/>
+   <MainContent/>
 </template>
 
 <script setup>

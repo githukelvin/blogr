@@ -21,3 +21,14 @@ main{
     margin-top: -15.2em;
     background-image: url("/images/illustration-editor-desktop.svg");
 }
+.para{
+    h1{
+        font-family: Osemibold;
+        color: c.$Verydarkdesaturatedblue;
+
+    }
+    p{
+        font-family: Olight;
+        color: c.$bodycopy;
+    }
+}

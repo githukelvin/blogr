@@ -15,5 +15,13 @@ defineProps({
 </template>
 
 <style lang="scss" scoped>
-
+.para{
+  padding-left: 1.9em;
+  h1{
+    font-size: 1.5em;
+  }
+  p{
+    line-height: 2;
+  }
+}
 </style>
