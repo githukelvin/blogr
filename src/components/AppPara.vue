@@ -16,12 +16,17 @@ defineProps({
 
 <style lang="scss" scoped>
 .para{
-  padding-left: 1.9em;
+  padding-left: 1.65em;
+  margin-top:-5px;
   h1{
-    font-size: 1.5em;
+    font-size: 1.72em;
+    padding-bottom: .88em;
   }
   p{
-    line-height: 2;
+    line-height: 1.74;
+    width: 86%;
+    word-spacing:2px;
+    letter-spacing: .2px;
   }
 }
 </style>
