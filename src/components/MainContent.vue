@@ -35,6 +35,24 @@
           </div>
         </div>
       </section>
+      <section class="sect3 lastcontent">
+        <div class="infolast">
+          <div class="infolast__right"></div>
+          <div class="infolast__left">
+            <AppPara
+            title="Free, open, simple"
+            text="Blogr is a free and open source application backed by a large community of helpful developers. It supports
+  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn."
+            />
+            <AppPara
+            title="Powerful tooling"
+            text="Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+  capable of producing even the most complicated sites."
+            />
+          </div>
+        </div>
+      </section>
    </div>
   </main>
 </template>
@@ -72,7 +90,7 @@ import AppPara from './AppPara.vue'
   .details{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3.9em;
+    gap: 2em;
   }
   .dleft{
     margin-top:-4.3em;
@@ -82,9 +100,9 @@ import AppPara from './AppPara.vue'
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 1.45em;
     margin-top: 7.3em;
     h1{
-      margin-left: -1.23em;
       text-align: start;
       font-size: 2.3em;
       margin-bottom: 0;
@@ -95,11 +113,24 @@ import AppPara from './AppPara.vue'
     width: 100%;
     word-spacing: 2px;
     letter-spacing: .2px;
-      margin-left: -1.85em;
 
   }
   }
 }
+}
+.infolast{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7.5em;
+  &__right{
+    margin-top: 7.5em;
+  }
+  &__left{
+    margin-block: 19.5em;
+    display: flex;
+    flex-direction:column;
+    gap:3.4em
+  }
 }
 
 </style>

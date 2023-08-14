@@ -40,11 +40,11 @@ main{
     background-position: left;
 
     .details{
-        .left{
+        .dleft{
             background-size: 150%;
 
         }
-        .right{
+        .dright{
             h1{
                 font-family: 'Osemibold';
                 color: c.$text;
@@ -53,6 +53,16 @@ main{
                 font-family: 'Olight';
                 color: c.$text;
             }
+        }
+    }
+}
+.sect3{
+    .infolast{
+        &__right{
+            background-image: url("/images/illustration-laptop-desktop.svg");
+            background-position-x: -260px;
+            background-size: 160%;
+            background-repeat: no-repeat;
         }
     }
 }
