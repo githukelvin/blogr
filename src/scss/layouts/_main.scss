@@ -34,7 +34,27 @@ main{
     }
 }
 .sect2{
-    background:c.$Verydarkgrayblue
+    background:c.$Verydarkgrayblue;
+    background-image: url("/images/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+
+    .details{
+        .left{
+            background-size: 150%;
+
+        }
+        .right{
+            h1{
+                font-family: 'Osemibold';
+                color: c.$text;
+            }
+            p{
+                font-family: 'Olight';
+                color: c.$text;
+            }
+        }
+    }
 }
 footer{
     background: c.$footerbackground;
