@@ -6,18 +6,18 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 3.8em;
-  .ham{
-    $size:20px;
+  .ham {
+    $size: 30px;
     width: $size;
     height: $size;
     background-image: url("/images/icon-hamburger.svg");
     background-size: cover;
     background-repeat: no-repeat;
     display: none;
-    &.active{
-    background-image: url("/images/icon-close.svg");
+    &.active {
+      background-image: url("/images/icon-close.svg");
     }
-    @include responsive('sm'){
+    @include responsive("sm") {
       display: block !important;
     }
   }
@@ -34,20 +34,62 @@
       display: flex;
       flex-direction: row;
       gap: 2em;
+      @include responsive("sm") {
+        width: 85%;
+        flex-direction: column;
+        position: absolute;
+        left: 30px;
+        // margin-top: 2em;
+        border-radius: 5px;
+        background: #fff;
+        // justify-content: center;
+        align-items: center;
+        padding: 2em;
+        height: 100%;
+      }
       div {
         position: relative;
+        @include responsive("sm") {
+          top: 0;
+          width: fit-content;
+        }
         .showdropdown {
           position: absolute;
           opacity: 0;
           visibility: hidden;
+          height: 100%;
+          @include responsive("sm") {
+            position: relative;
+            left: 0;
+            top: 0;
+            visibility: visible;
+            opacity: 1;
+          }
           .dropdown {
+            position: absolute;
+            left: 0;
+            top: 0;
+            
             ul {
               gap: 1em;
+                background: #fff;
+                @include responsive("sm") {
+                  background: hsla(240, 3%, 79%, 0.274);
+                }
               li {
                 a {
                   color: nc.$Verydarkdesaturatedblue;
                   font-family: "Uregular";
                   font-size: 1em;
+                  @include responsive("sm") {
+                    font-size: 1.3em;
+                    font-family: 'Osemibold';
+                    color: nc.$bodycopy;
+                    &:hover{
+                       border-bottom: 0px solid nc.$text;
+                    }
+                  }
+
                   &:hover {
                     color: nc.$Verydarkgrayblue;
                     font-family: "Ubold";
@@ -72,7 +114,7 @@
           .showdropdown {
             opacity: 1;
             visibility: visible;
-            transition: opacity 200ms ease,visibility 250ms ease-in;
+            transition: opacity 200ms ease, visibility 250ms ease-in;
           }
         }
       }
@@ -82,17 +124,25 @@
         align-items: center;
         gap: 0.5em;
 
+        @include responsive("sm") {
+          width: min-content;
+        }
+
         a {
           color: nc.$text;
           font-family: "Osemibold";
           text-transform: capitalize;
           font-size: 1rem;
           padding-top: 0.5em;
-          @include responsive('md'){
+          @include responsive("md") {
             font-size: 1.1em;
           }
+          @include responsive("sm") {
+            font-size: 1.4em;
+            color: nc.$Verydarkgrayblue;
+          }
         }
-        div {
+        #bg {
           $size: 0.7em;
           width: $size;
           height: $size;
@@ -100,18 +150,23 @@
           background-repeat: no-repeat;
           background-size: contain;
           background-position-y: 3px;
+          @include responsive("sm") {
+            background-image: url("../images/icon-arrow-dark.svg");
+          }
         }
       }
     }
   }
 }
-
 .right {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 2em;
-
+  @include responsive("sm") {
+    flex-direction: column;
+    position: absolute;
+  }
   a {
     text-transform: capitalize;
     font-family: "Ubold";
@@ -138,7 +193,7 @@
   h1 {
     font-family: "Osemibold";
     font-size: 3.65rem;
-    @include responsive('md'){
+    @include responsive("md") {
       font-size: 2.8em;
     }
   }
@@ -146,9 +201,9 @@
   p {
     font-family: "Olight";
     color: nc.$text;
-     font-size: 1.2rem;
-     padding: .8em 0;
-     word-spacing: 2px;
+    font-size: 1.2rem;
+    padding: 0.8em 0;
+    word-spacing: 2px;
   }
 
   .btns {

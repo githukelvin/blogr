@@ -14,7 +14,7 @@ import AppButton from './AppButton.vue'
               <a href="/product">product</a>
               <div id="bg"></div>
             </li>
-            <div class="showdropdown">
+            <!-- <div class="showdropdown">
               <DropDown
                 link1="Overview"
                 link2="Pricing"
@@ -22,21 +22,21 @@ import AppButton from './AppButton.vue'
                 link4="Features"
                 link5="Integrations"
               />
-            </div>
+            </div> -->
           </div>
           <div class="li2">
             <li>
               <a href="/company">company</a>
               <div id="bg"></div>
             </li>
-            <div class="showdropdown">
+            <!-- <div class="showdropdown">
               <DropDown
                 link1="About"
                 link2="Team"
                 link3="Blog"
                 link4="Careers"
               />
-            </div>
+            </div> -->
           </div>
           <div class="li3">
             <li>

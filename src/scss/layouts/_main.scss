@@ -9,6 +9,12 @@ header {
   background-position: 25% 55%;
   background-repeat: no-repeat;
   border-bottom-left-radius: 6em;
+  @include responsive('sm'){
+  background: url("../images/bg-pattern-intro-mobile.svg"),
+    linear-gradient(to right, c.$CTAmobilelight, c.$CTAmobileLightred);
+
+  }
+
 }
 
 main {

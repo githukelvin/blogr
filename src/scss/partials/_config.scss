@@ -24,6 +24,10 @@ body{
 .content{
      width:min(95%, 1105px);
      margin-inline:auto;
+     @include responsive('sm') {
+     width:min(90%, 1105px);
+
+     }
 }
 .topcontent{
      width:min(100%, 1300px);

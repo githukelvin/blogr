@@ -33,7 +33,6 @@ defineProps({
 
 <style lang="scss" scoped>
 .dropdown{
-  background: #fff;
   border-radius: 5px;
   padding: 1.5em 2em;
   margin-top: 1em;
@@ -41,6 +40,17 @@ defineProps({
  ul{
    display: flex;
   flex-direction: column;
+ }
+ @media (max-width: 567px) {
+  padding:  0;
+  margin-left: -6em;
+  width: 270px;
+
+  ul{
+    width: 100%;
+  height: max-content;
+
+  }
  }
 }
 </style>

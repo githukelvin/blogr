@@ -23,7 +23,7 @@
           </div>
         </div>
       </section>
-      <section class="sect2">
+      <section class="sect2 ">
         <div class="content details">
           <div class="dleft">
             <img src="/images/illustration-phones.svg" alt="phones illusrations">
