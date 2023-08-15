@@ -86,6 +86,9 @@ footer{
                         text-transform: capitalize;
                         color: c.$footertext;
                         font-size: .98em;
+                        &:hover{
+                            border-bottom: 1px solid c.$footertext
+                        }
                     }
                 }
             }

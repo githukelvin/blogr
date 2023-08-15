@@ -18,6 +18,48 @@
       display: flex;
       flex-direction: row;
       gap: 2em;
+      div {
+        position: relative;
+        .showdropdown {
+          position: absolute;
+          opacity: 0;
+          visibility: hidden;
+          .dropdown {
+            ul {
+              gap: 1em;
+              li {
+                a {
+                  color: nc.$Verydarkdesaturatedblue;
+                  font-family: "Uregular";
+                  font-size: 1em;
+                  &:hover {
+                    color: nc.$Verydarkgrayblue;
+                    font-family: "Ubold";
+                  }
+                }
+              }
+            }
+          }
+        }
+        &:hover {
+          a {
+            background-position-y: 5px;
+            border-bottom: 1px solid nc.$text;
+            transition: border-bottom 300ms ease;
+          }
+
+          #bg {
+            transform: rotate(180deg);
+            transition: transform 250ms ease;
+          }
+
+          .showdropdown {
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 200ms ease,visibility 250ms ease-in;
+          }
+        }
+      }
       li {
         display: flex;
         flex-direction: row;
@@ -39,18 +81,6 @@
           background-repeat: no-repeat;
           background-size: contain;
           background-position-y: 3px;
-        }
-
-        &:hover {
-          a {
-          background-position-y: 5px;
-            border-bottom: 1px solid nc.$text;
-            transition: border-bottom 300ms ease;
-          }
-          div {
-            transform: rotate(180deg);
-            transition: transform 250ms ease;
-          }
         }
       }
     }
@@ -75,6 +105,13 @@
       background: nc.$CTAhoverbackground;
       color: nc.$text;
     }
+  }
+}
+#hey {
+  &:hover {
+    background: nc.$CTAhoverbackground;
+    color: nc.$text;
+    border: nc.$CTAhoverbackground;
   }
 }
 
