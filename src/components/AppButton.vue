@@ -16,5 +16,6 @@ defineProps({
   margin-right: -8px;
   background: #fff;
   border-radius: 35px;
+
 }
 </style>

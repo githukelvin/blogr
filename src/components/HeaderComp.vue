@@ -1,44 +1,21 @@
 <template>
   <header>
     <div class="container">
-      <div class="content navBar">
-        <div class="left">
-          <a href="/"><img src="/images/logo.svg" alt="" /></a>
-          <nav>
-            <ul>
-              <li>
-                <a href="/product">product</a>
-                <div></div>
-              </li>
-              <li>
-                <a href="/company">company</a>
-                <div></div>
-              </li>
-              <li>
-                <a href="/connect">connect</a>
-                <div></div>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="right btns">
-          <a href="#">login</a>
-          <AppButton link="#" text="Sign up" />
-        </div>
-      </div>
+     <NavBar/>
     </div>
     <div class="middleContent">
       <h1>A modern publishing platform</h1>
       <p>Grow your audience and build your online brand</p>
       <div class="btns">
         <AppButton id="hey" link="#" text="Start for Free" />
-        <a href="#">Learn More</a>
+        <a class='learn' href="#">Learn More</a>
       </div>
     </div>
   </header>
 </template>
 
 <script setup>
+import NavBar from './NavBar.vue'
 import AppButton from './AppButton.vue'
 </script>
 
@@ -73,7 +50,14 @@ import AppButton from './AppButton.vue'
     #hey{
       padding: .85em;
       margin-right: 0;
+      &:hover{
+      }
     }
+    .learn{
+    &:hover{
+        color:hsl(356, 100%, 66%);
+    }
+}
   }
 }
 </style>

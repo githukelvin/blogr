@@ -13,7 +13,7 @@ header {
 main{
     h2{
         font-family: Olight;
-        color: c.$Verydarkdesaturatedblue;
+        color: c.$headings;
         font-size:2.4em;
     }
 }
@@ -25,7 +25,7 @@ main{
 .para{
     h1{
         font-family: Osemibold;
-        color: c.$Verydarkdesaturatedblue;
+        color: c.$headings;
 
     }
     p{
@@ -69,4 +69,33 @@ main{
 footer{
     background: c.$footerbackground;
     color: c.$footertext;
+    .footer{
+        .subfooter{
+            h1{
+                color:c.$text;
+                font-family: 'Osemibold';
+                text-transform: capitalize;
+                font-size: .95em;
+                padding-bottom: 2.3em;
+
+            }
+            ul{
+                li{
+                    a{
+                        font-family: 'Olight';
+                        text-transform: capitalize;
+                        color: c.$footertext;
+                        font-size: .98em;
+                    }
+                }
+            }
+           
+        }
+    }
+}
+.learn{
+    &:hover{
+        background: c.$text;
+        color:c.$CTAtext;
+    }
 }

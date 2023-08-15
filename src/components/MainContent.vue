@@ -55,9 +55,11 @@
       </section>
    </div>
   </main>
+  <FooterComp/>
 </template>
 
 <script setup>
+import FooterComp from './FooterComp.vue'
 import AppPara from './AppPara.vue'
 </script>
 
@@ -126,7 +128,8 @@ import AppPara from './AppPara.vue'
     margin-top: 7.5em;
   }
   &__left{
-    margin-block: 19.5em;
+    margin-top: 19.5em;
+    margin-bottom: 18.8em;
     display: flex;
     flex-direction:column;
     gap:3.4em

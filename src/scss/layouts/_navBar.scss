@@ -38,11 +38,12 @@
           background-image: url("../images/icon-arrow-light.svg");
           background-repeat: no-repeat;
           background-size: contain;
-          background-position: center;
+          background-position-y: 3px;
         }
 
         &:hover {
           a {
+          background-position-y: 5px;
             border-bottom: 1px solid nc.$text;
             transition: border-bottom 300ms ease;
           }
@@ -70,6 +71,10 @@
   }
   .btn {
     color: nc.$CTAtext;
+    &:hover {
+      background: nc.$CTAhoverbackground;
+      color: nc.$text;
+    }
   }
 }
 
