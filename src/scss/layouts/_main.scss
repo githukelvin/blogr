@@ -49,13 +49,13 @@ main {
       }
     }
     &__right {
-      height: 350px;
       margin-top: -15.2em;
       background-image: url("/images/illustration-editor-desktop.svg");
       background-repeat: no-repeat;
-      background-size: contain;
       @include responsive("md") {
         margin-top: 0;
+      background-size: contain;
+        height: 350px;
         background-position: center;
         background-image: url("/images/illustration-editor-mobile.svg");
       }

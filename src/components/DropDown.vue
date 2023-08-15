@@ -42,13 +42,17 @@ defineProps({
   flex-direction: column;
  }
  @media (max-width: 567px) {
+   position: absolute;
+  left: 0;
+  top: 0;
   padding:  0;
-  margin-left: -6em;
+  margin-left: -6.5em;
   width: 270px;
+  height: auto;
 
   ul{
     width: 100%;
-  height: max-content;
+    height:fit-content;
 
   }
  }
