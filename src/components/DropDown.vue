@@ -32,29 +32,16 @@ defineProps({
 </script>
 
 <style lang="scss" scoped>
-.dropdown{
+.dropdown {
+  background: #fff;
   border-radius: 5px;
   padding: 1.5em 2em;
   margin-top: 1em;
   width: 220px;
- ul{
-   display: flex;
-  flex-direction: column;
- }
- @media (max-width: 567px) {
-   position: absolute;
-  left: 0;
-  top: 0;
-  padding:  0;
-  margin-left: -6.5em;
-  width: 270px;
-  height: auto;
 
-  ul{
-    width: 100%;
-    height:fit-content;
-
+  ul {
+    display: flex;
+    flex-direction: column;
   }
- }
 }
 </style>

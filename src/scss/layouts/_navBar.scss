@@ -1,23 +1,27 @@
-@use "../partials/colors" as nc;
-@use "../partials/mixins" as *;
+@use "../partials/colors"as nc;
+@use "../partials/mixins"as *;
+
 .navBar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding-top: 3.8em;
-  .ham{
-    $size:20px;
+
+  .ham {
+    $size: 20px;
     width: $size;
     height: $size;
     background-image: url("/images/icon-hamburger.svg");
     background-size: cover;
     background-repeat: no-repeat;
     display: none;
-    &.active{
-    background-image: url("/images/icon-close.svg");
+
+    &.active {
+      background-image: url("/images/icon-close.svg");
     }
-    @include responsive('sm'){
+
+    @include responsive('sm') {
       display: block !important;
     }
   }
@@ -34,23 +38,29 @@
       display: flex;
       flex-direction: row;
       gap: 2em;
-      @include responsive('sm'){
+
+      @include responsive('sm') {
         display: none;
       }
+
       div {
         position: relative;
+
         .showdropdown {
           position: absolute;
           opacity: 0;
           visibility: hidden;
+
           .dropdown {
             ul {
               gap: 1em;
+
               li {
                 a {
                   color: nc.$Verydarkdesaturatedblue;
                   font-family: "Uregular";
                   font-size: 1em;
+
                   &:hover {
                     color: nc.$Verydarkgrayblue;
                     font-family: "Ubold";
@@ -60,6 +70,7 @@
             }
           }
         }
+
         &:hover {
           a {
             background-position-y: 5px;
@@ -75,10 +86,11 @@
           .showdropdown {
             opacity: 1;
             visibility: visible;
-            transition: opacity 200ms ease,visibility 250ms ease-in;
+            transition: opacity 200ms ease, visibility 250ms ease-in;
           }
         }
       }
+
       li {
         display: flex;
         flex-direction: row;
@@ -91,10 +103,12 @@
           text-transform: capitalize;
           font-size: 1rem;
           padding-top: 0.5em;
-          @include responsive('md'){
+
+          @include responsive('md') {
             font-size: 1.1em;
           }
         }
+
         div {
           $size: 0.7em;
           width: $size;
@@ -114,9 +128,10 @@
   flex-direction: row;
   align-items: center;
   gap: 2em;
-    @include responsive('sm') {
-      display: none;
-    }
+
+  @include responsive('sm') {
+    display: none;
+  }
 
   a {
     text-transform: capitalize;
@@ -124,14 +139,17 @@
     color: nc.$text;
     font-size: 1rem;
   }
+
   .btn {
     color: nc.$CTAtext;
+
     &:hover {
       background: nc.$CTAhoverbackground;
       color: nc.$text;
     }
   }
 }
+
 #hey {
   &:hover {
     background: nc.$CTAhoverbackground;
@@ -144,7 +162,8 @@
   h1 {
     font-family: "Osemibold";
     font-size: 3.65rem;
-    @include responsive('md'){
+
+    @include responsive('md') {
       font-size: 2.8em;
     }
   }
@@ -152,14 +171,14 @@
   p {
     font-family: "Olight";
     color: nc.$text;
-     font-size: 1.2rem;
-     padding: .8em 0;
-     word-spacing: 2px;
+    font-size: 1.2rem;
+    padding: .8em 0;
+    word-spacing: 2px;
   }
 
   .btns {
     font-family: "Ubold";
-  
+
     a {
       color: nc.$text;
       padding: 0.8em 1.5em;
