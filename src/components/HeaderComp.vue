@@ -30,14 +30,6 @@ import AppButton from './AppButton.vue'
     text-align: center;
     color: #fff;
   }
-  h1 {
-    font-size: 3.65rem;
-  }
-  p {
-    font-size: 1.2rem;
-    padding: .8em 0;
-    word-spacing: 2px;
-  }
   .btns{
     margin-top: 2em;
     gap: 1em;

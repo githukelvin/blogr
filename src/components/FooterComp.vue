@@ -44,9 +44,7 @@ footer{
   border-top-right-radius:100px ;
   padding-block: 4.3em;
   .footer{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:1.9em;
+
     .subfooter{
       padding-top: .6em;
       ul{

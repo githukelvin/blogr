@@ -1,10 +1,26 @@
 @use "../partials/colors" as nc;
+@use "../partials/mixins" as *;
 .navBar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding-top: 3.8em;
+  .ham{
+    $size:20px;
+    width: $size;
+    height: $size;
+    background-image: url("/images/icon-hamburger.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+    &.active{
+    background-image: url("/images/icon-close.svg");
+    }
+    @include responsive('sm'){
+      display: block !important;
+    }
+  }
 }
 
 .left {
@@ -72,6 +88,9 @@
           text-transform: capitalize;
           font-size: 1rem;
           padding-top: 0.5em;
+          @include responsive('md'){
+            font-size: 1.1em;
+          }
         }
         div {
           $size: 0.7em;
@@ -118,11 +137,18 @@
 .middleContent {
   h1 {
     font-family: "Osemibold";
+    font-size: 3.65rem;
+    @include responsive('md'){
+      font-size: 2.8em;
+    }
   }
 
   p {
     font-family: "Olight";
     color: nc.$text;
+     font-size: 1.2rem;
+     padding: .8em 0;
+     word-spacing: 2px;
   }
 
   .btns {

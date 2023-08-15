@@ -57,6 +57,7 @@ import AppButton from './AppButton.vue'
       <a href="#">login</a>
       <AppButton link="#" text="Sign up" />
     </div>
+    <div class="ham"></div>
   </div>
 </template>
 

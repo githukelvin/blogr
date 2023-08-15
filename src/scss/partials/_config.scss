@@ -1,4 +1,5 @@
 @use "./colors" as c;
+@use "./mixins" as *;
 
 *{
     margin: 0;
@@ -16,7 +17,7 @@ body{
     background:c.$bgbody ;
 }
 .container{
-    width:min(95%,1440px);
+    width:min(100%,1440px);
     margin-inline:auto;
     
 }
@@ -25,10 +26,16 @@ body{
      margin-inline:auto;
 }
 .topcontent{
-     width:min(95%, 1300px);
+     width:min(100%, 1300px);
     margin-left: 8.8em;
+    @include responsive(xl){
+        margin-left:0;
+    }
 }
 .lastcontent{
-        width: min(95%, 1300px);
+        width: min(100%, 1300px);
         margin-right: 8.8em;
+        @include responsive('xl'){
+            margin-right: auto;
+        }
 }

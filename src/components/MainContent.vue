@@ -69,71 +69,7 @@ import AppPara from './AppPara.vue'
     text-align: center;
     padding: 4em 0 2.9em;
   }
-  .sect1{
-  .info{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    &__left{
-      display: flex;
-      flex-direction: column;
-      gap:5em;
-      margin-bottom: 16em;
-    }
-    &__right{
-    }
-  }
-}
-.sect2{
-  border-bottom-left-radius: 100px;
-  height: 400px;
-  border-top-right-radius: 100px;
-  background-position-y: -500px;
-  background-position-x: -210px;
-  .details{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2em;
-  }
-  .dleft{
-    margin-top:-4.3em;
-    margin-left:-2.5em;
-  }
-  .dright{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.45em;
-    margin-top: 7.3em;
-    h1{
-      text-align: start;
-      font-size: 2.3em;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-    p{
-    line-height: 1.74;
-    width: 100%;
-    word-spacing: 2px;
-    letter-spacing: .2px;
 
-  }
-  }
-}
-}
-.infolast{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 7.5em;
-  &__right{
-    margin-top: 7.5em;
-  }
-  &__left{
-    margin-top: 19.5em;
-    margin-bottom: 18.8em;
-    display: flex;
-    flex-direction:column;
-    gap:3.4em
-  }
 }
 
 </style>
